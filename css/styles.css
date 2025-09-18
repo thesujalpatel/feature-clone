@@ -309,11 +309,6 @@ section {
   justify-content: center;
 }
 
-.metadata-icon-wrapper img {
-  width: 16px;
-  height: 16px;
-}
-
 .metadata-text {
   font-size: 14px;
 }
