@@ -15,12 +15,8 @@
 
   /* Alpha Shades - 30% Shades */
   --primary-30: color-mix(in srgb, var(--primary) 30%, transparent);
-  --light-30: color-mix(in srgb, var(--light) 30%, transparent);
-  --dark-30: color-mix(in srgb, var(--dark) 30%, transparent);
 
   /* Alpha Shades - 70% Shades */
-  --primary-70: color-mix(in srgb, var(--primary) 70%, transparent);
-  --light-70: color-mix(in srgb, var(--light) 70%, transparent);
   --dark-70: color-mix(in srgb, var(--dark) 70%, transparent);
 
   /* Custom Colors */
@@ -302,7 +298,6 @@ section {
   gap: 6px;
   align-items: center;
   color: var(--light);
-  font-size: 14px;
   font-weight: 500;
 }
 
@@ -339,7 +334,6 @@ section {
 /* Tab Media Queries */
 @media (max-width: 768px) {
   .button {
-    font-size: 14px;
     padding: 8px 14px;
   }
 
@@ -369,7 +363,7 @@ section {
 /* Mobile Media Queries */
 @media (max-width: 480px) {
   .button {
-    font-size: 12px;
+    font-size: 14px;
     padding: 6px 12px;
   }
 
