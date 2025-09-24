@@ -90,23 +90,23 @@ section {
   gap: 20px;
 }
 
-.section-body .tile {
+.section-body .card {
   height: 100%;
 }
 
 /* Base Card Component */
-.tile {
+.card {
   display: flex;
   gap: 10px;
 }
 
 /* Card Variants */
-.col-with-icons .tile {
+.col-with-icons .card {
   flex-direction: column;
 }
 
 /* Card Icon Wrapper Base */
-.tile-icon-wrapper {
+.card-icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,100 +117,100 @@ section {
 }
 
 /* Icon Wrapper Variants */
-.tile-icon-wrapper--large {
+.card-icon-wrapper--large {
   width: 60px;
   height: 60px;
   background-color: var(--primary);
 }
-.tile-icon-wrapper--large span {
+.card-icon-wrapper--large span {
   color: var(--light);
   scale: 1.5;
   font-variation-settings: "FILL" 1;
 }
 
-.tile-icon-wrapper--medium {
+.card-icon-wrapper--medium {
   width: 50px;
   height: 50px;
   background-color: var(--dark-tint);
 }
-.tile-icon-wrapper--medium span {
+.card-icon-wrapper--medium span {
   color: var(--dark);
   scale: 1.3;
 }
 
-.tile-icon-wrapper--small {
+.card-icon-wrapper--small {
   width: 35px;
   height: 35px;
   background-color: transparent;
 }
-.tile-icon-wrapper--small span {
+.card-icon-wrapper--small span {
   color: var(--dark);
   scale: 1.1;
 }
 
 /* Card Content Container */
-.tile-content {
+.card-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
   flex: 1;
   justify-content: space-between;
 }
-.tile-header {
+.card-header {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.icon-grid .tile-content {
+.icon-grid .card-content {
   gap: 5px;
 }
 
 /* Card Title Variants */
-.tile-title {
+.card-title {
   font-weight: 500;
   line-height: 1.2;
   color: var(--dark);
 }
 
-.tile-title--large {
+.card-title--large {
   font-size: 30px;
 }
 
-.tile-title--medium {
+.card-title--medium {
   font-size: 25px;
   font-weight: 700;
 }
 
 /* Card Description */
-.tile-description {
+.card-description {
   color: var(--accent);
   line-height: 1.4;
   font-size: 16px;
 }
 
 /* Card Action Links */
-.tile-action {
+.card-action {
   width: fit-content;
   color: var(--primary);
   font-weight: 500;
 }
 
-.tile-action:hover {
+.card-action:hover {
   color: var(--primary-dark);
 }
 
-.tile-action span {
+.card-action span {
   display: inline-block;
   margin-left: 4px;
   transition: transform 0.3s ease;
 }
 
-.tile-action:hover span {
+.card-action:hover span {
   transform: translateX(5px);
 }
 
 /* Image Card Variant */
-.tile--image {
+.card--image {
   position: relative;
   border-radius: var(--card-border-radius);
   overflow: hidden;
@@ -219,20 +219,20 @@ section {
 }
 
 /* Image Wrapper */
-.tile-image-wrapper {
+.card-image-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.tile-image {
+.card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* Image Overlay */
-.tile-overlay {
+.card-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -242,7 +242,7 @@ section {
 }
 
 /* Content Overlay */
-.tile-content-overlay {
+.card-content-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -255,7 +255,7 @@ section {
 }
 
 /* Overlay Title */
-.tile-title--overlay {
+.card-title--overlay {
   color: var(--light);
   font-size: 32px;
   font-weight: 600;
@@ -265,13 +265,13 @@ section {
 }
 
 /* Image Card Footer */
-.tile-footer {
+.card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.tile-footer-avatar-wrapper {
+.card-footer-avatar-wrapper {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -280,20 +280,20 @@ section {
   flex-shrink: 0;
 }
 
-.tile-footer-avatar {
+.card-footer-avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* Metadata Group */
-.tile-metadata-group {
+.card-metadata-group {
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-.tile-metadata {
+.card-metadata {
   display: flex;
   gap: 6px;
   align-items: center;
@@ -321,7 +321,7 @@ section {
 }
 
 @media (max-width: 1024px) {
-  .tile--image {
+  .card--image {
     aspect-ratio: 2/3;
   }
 }
@@ -342,15 +342,15 @@ section {
     font-size: 28px;
   }
 
-  .tile-title--large {
+  .card-title--large {
     font-size: 24px;
   }
 
-  .tile-title--medium {
+  .card-title--medium {
     font-size: 20px;
   }
 
-  .tile--image {
+  .card--image {
     aspect-ratio: 2/1;
   }
 }
@@ -367,21 +367,21 @@ section {
     gap: 30px;
   }
 
-  .tile-icon-wrapper--large {
+  .card-icon-wrapper--large {
     width: 50px;
     height: 50px;
   }
 
-  .tile-title--overlay {
+  .card-title--overlay {
     font-size: 24px;
     margin-bottom: 10px;
   }
 
-  .tile--image {
+  .card--image {
     aspect-ratio: 5/3;
   }
 
-  .tile-content-overlay {
+  .card-content-overlay {
     padding: 15px;
   }
 }
